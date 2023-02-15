@@ -26,7 +26,7 @@ public class Index {
     }
     
     @GetMapping({"/"})
-    public String getDataKaryawan(
+    public String getFunction(
         @RequestParam(name = "nama", required = false) String nama,
         @RequestParam(name = "tanggalmasuk", required = false) String tanggalmasuk,
         @RequestParam(name = "nohp", required = false) String nohp, 
@@ -58,7 +58,7 @@ public class Index {
         return "index"; //index.html
     }
     @PostMapping({"/"})
-    public String deleteKaryawan(
+    public String postFunction(
         @RequestParam(name = "delete", required = false) String delete,
         
         @RequestParam(name = "update", required = false) String update,
